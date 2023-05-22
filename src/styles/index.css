@@ -8,8 +8,19 @@
 }
 
 :root {
+    --D_darkBlueT: rgba(12, 19, 79, 0.7);
     --D_darkBlue: #0C005A;
     --D_blue:#106fb7;
     --D_lightGreen: #aac80d;
     --D_green: #34a33d;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.d_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
