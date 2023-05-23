@@ -3,6 +3,7 @@ import logo from '../../public/logo_T.png'
 import Card_component from '../components/card';
 
 const Home = () => {
+
     return (
         <>
         <section className="home_section">

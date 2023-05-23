@@ -19,9 +19,9 @@ const Navbar_component = () => {
             className="me-auto my-2 my-lg-0 navbar_listContainer"
             navbarScroll
           >
-            <Nav.Link href="#action1">Inicio</Nav.Link>
-            <Nav.Link href="#action2">Servicios</Nav.Link>
-            <Nav.Link href="#action2">Donde Estamos</Nav.Link>
+            <Nav.Link href="/">Inicio</Nav.Link>
+            <Nav.Link href="/servicios">Servicios</Nav.Link>
+            <Nav.Link href="/ubicacion">Donde Estamos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
