@@ -19,6 +19,19 @@ const Home = () => {
                 <Card_component/>
             </div>
         </section>
+        <section className='home_videoSection d_center'>
+            <div className='home_videoContent'>
+                <div className='home_videoTitle d_center'>
+                    <h3>
+                        Eficiencia que impulsa el éxito, calidad    que supera expectativas.
+                    </h3>
+                </div>
+                <div className='home_videoContainer d_center'>
+                    <video className='home_video' src="../../public/Donair-1.mov" controls></video>
+                    <video className='home_video' src="../../public/Donair-2.mov" controls></video>
+                </div>
+            </div>
+        </section>
         </>
     )
 };

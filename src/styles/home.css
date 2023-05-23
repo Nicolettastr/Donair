@@ -85,8 +85,49 @@
     background: var(--D_lightGreen) !important;
 }
 
-.home_cardSection {
+.home_cardSection,
+.home_videoContainer {
     flex-direction: column;
+}
+
+.home_videoTitle {
+    width: 80%;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.home_videoTitle {
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+.home_videoTitle h3 {
+    color: white;
+}
+
+.home_videoSection {
+    flex-direction: column;
+    background: url('https://img.freepik.com/foto-gratis/manos-recortadas-planos-arquitecto-proyecto-arquitectonico_1098-18818.jpg?size=626&ext=jpg&ga=GA1.2.1832098813.1668892518&semt=sph');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.home_videoContent {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    background: var(--D_darkBlueT);
+}
+
+.home_videoSection video {
+    padding: 1rem 0 2rem 0;
+}
+
+.home_video {
+    display: flex;
+    justify-content: center;
+    width: 70%;
 }
 
 @media (min-width: 700px) {
