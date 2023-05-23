@@ -24,3 +24,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+@keyframes appearAnimation {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+}
+
+.pag_container {
+    animation: appearAnimation 3s none;
+}

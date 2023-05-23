@@ -52,6 +52,15 @@
     cursor: pointer;
 }
 
+.footer_info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_info a:hover {
+    text-decoration: underline;
+}
+
 .footer_rightsContainer {
     flex-direction: column;
 }

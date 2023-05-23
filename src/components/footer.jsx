@@ -1,5 +1,6 @@
 import logo from '../../public/logo.png'
 import '../styles/footer.css'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   return (
@@ -11,12 +12,24 @@ export const Footer = () => {
             </div>
         <div className='footer_container d_center'>
             <div className='footer_info'>
-                <p>Sobre Donair</p>
-                <p>Trabajos</p>
-                <p>Donde Estamos</p>
-                <p>Servicios</p>
-                <p>Climatización</p>
-                <p>Proyectos</p>
+                <Link to='/about'>
+                    <p>Sobre Nosotros</p>
+                </Link>
+                <Link to='/services#trabajos'>
+                    <p>Trabajos</p>
+                </Link>
+                <Link to='/location'>
+                    <p>Donde Estamos</p>
+                </Link>
+                <Link to='/services#servicios'>
+                    <p>Servicios</p>
+                </Link>
+                <Link to='/services#climatizacion'>
+                    <p>Climatización</p>
+                </Link>
+                <Link to='/services#proyectos'>
+                    <p>Proyectos</p>
+                </Link>
             </div>
             <div className='footer_open d_center'>
                 <div className='d_center'>

@@ -36,7 +36,7 @@ const Card_component = () => {
                     <Card.Text className='card_text'>
                         {item.info}
                     </Card.Text>
-                    <Link to={`/servicios#${item.id}`} className='card_button'>{item.name}</Link>
+                    <Link to={`/services#${item.id}`} className='card_button'>{item.name}</Link>
             </Card.Body>
             </Card>
         </div>

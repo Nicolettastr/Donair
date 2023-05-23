@@ -22,8 +22,8 @@ const Navbar_component = () => {
             navbarScroll
           >
             <Nav.Link href="/">Inicio</Nav.Link>
-            <Nav.Link href="/servicios">Servicios</Nav.Link>
-            <Nav.Link href="/ubicacion">Donde Estamos</Nav.Link>
+            <Nav.Link href="/services">Servicios</Nav.Link>
+            <Nav.Link href="/location">Donde Estamos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
