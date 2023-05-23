@@ -80,9 +80,32 @@
     justify-content: space-between;
 }
 
+.card_container {
+    transition: all 1s;
+}
+
+.card_container:hover {
+    transform: scale(1.05);
+}
+
 .card_button {
-    border-color: var(--D_lightGreen) !important;;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: var(--D_lightGreen) !important;
     background: var(--D_lightGreen) !important;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: all 0.5s;
+}
+
+.card_button:hover {
+    background-color: var(--D_green) !important;
+    color: white;
 }
 
 .home_cardSection,

@@ -13,11 +13,23 @@
 
 .navbar_section {
     background-color: white;
+    border-bottom: 1px solid rgba(243, 239, 239, 0.76);
 }
 
 .navbar_brandSection {
     width: 50%;
     padding: 0 2rem 0 0.5rem;
+}
+
+.navbar_listContainer a {
+    color: rgb(39, 38, 38);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar_listContainer a:hover {
+    text-decoration: underline;
+    color: var(--D_green);
 }
 
 @media (min-width: 650px){

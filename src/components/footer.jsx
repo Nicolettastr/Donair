@@ -21,7 +21,7 @@ export const Footer = () => {
             <div className='footer_open d_center'>
                 <div className='d_center'>
                     <h5>Horario</h5>
-                    <p>Lunes - Jueves: 8:00h - 17:00h</p>
+                    <p>Lunes - Jueves: 8:00h - 18:30h</p>
                     <p>Viernes: 8:00h - 14:00h</p>
                 </div>
                 <div className='d_center'>

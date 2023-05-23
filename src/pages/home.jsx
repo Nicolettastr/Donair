@@ -28,8 +28,8 @@ const Home = () => {
                     </h3>
                 </div>
                 <div className='home_videoContainer d_center'>
-                    <video className='home_video' src="../../public/Donair-1.mov" controls></video>
-                    <video className='home_video' src="../../public/Donair-2.mov" controls></video>
+                    <video className='home_video' src="/DonAir-1.mov" controls></video>
+                    <video className='home_video' src="/DonAir-2.mov" controls></video>
                 </div>
             </div>
         </section>
