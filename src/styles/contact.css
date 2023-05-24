@@ -1,0 +1,7 @@
+.contact_Section {
+    width: 100vw;
+    height: 100vh;
+    background: var(--D_darkBlue);
+    margin-bottom: 1rem;
+    flex-direction: column;
+}

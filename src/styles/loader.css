@@ -27,5 +27,5 @@
   }
   
   .loader_img {
-    animation: scaleAnimation 5s infinite;
+    animation: scaleAnimation 5s none;
   }

@@ -22,6 +22,7 @@
 }
 
 .navbar_listContainer a {
+    text-decoration: none;
     color: rgb(39, 38, 38);
     font-size: 1.2rem;
     cursor: pointer;
@@ -39,5 +40,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-right: 2rem;
     }
 }

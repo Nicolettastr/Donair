@@ -3,10 +3,11 @@ import logo from '../../public/logo_T.png'
 import Card_component from '../components/card';
 import { Link } from 'react-router-dom';
 
+
 const Home = () => {
 
     return (
-        <>
+        <div className='pag_container'>
         <section className="home_section">
             <div className='home_sectionContainer d_center'>
                 <figure className='home_image'>
@@ -49,7 +50,7 @@ const Home = () => {
                 </Link>
             </div>
         </section>
-        </>
+        </div>
     )
 };
 
