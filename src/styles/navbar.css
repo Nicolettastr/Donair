@@ -1,5 +1,5 @@
 .navbar_logoContainer {
-    width: 80%;
+    width: 100%;
     min-width: 100px;
     max-width: 180px;
     height: fit-content;
@@ -17,8 +17,13 @@
 }
 
 .navbar_brandSection {
-    width: 50%;
     padding: 0 2rem 0 0.5rem;
+}
+
+.navbar_listContainer {
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 .navbar_listContainer a {
@@ -36,10 +41,13 @@
 @media (min-width: 650px){
     .navbar_listContainer {
         width: 100%;
-        max-width: 550px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         padding-right: 2rem;
+    }
+
+    .navbar_listContainer a {
+        margin: 0 2rem;
     }
 }

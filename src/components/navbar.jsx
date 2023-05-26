@@ -14,11 +14,11 @@ const Navbar_component = () => {
     <Navbar className='navbar_section' expand="sm">
       <Container fluid>
         <Navbar.Brand className='navbar_brandSection' href="#">
-          <a href="/">
+          <Link to="/">
           <figure className='navbar_logoContainer'>
             <img src={store.logo} alt='Donair logo de empresa' />
           </figure>
-          </a>
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
