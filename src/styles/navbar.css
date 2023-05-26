@@ -1,0 +1,45 @@
+.navbar_logoContainer {
+    width: 80%;
+    min-width: 100px;
+    max-width: 180px;
+    height: fit-content;
+    margin: 0;
+}
+
+.navbar_logoContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar_section {
+    background-color: white;
+    border-bottom: 1px solid rgba(243, 239, 239, 0.76);
+}
+
+.navbar_brandSection {
+    width: 50%;
+    padding: 0 2rem 0 0.5rem;
+}
+
+.navbar_listContainer a {
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar_listContainer a:hover {
+    text-decoration: underline;
+    color: var(--D_green);
+}
+
+@media (min-width: 650px){
+    .navbar_listContainer {
+        width: 100%;
+        max-width: 550px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 2rem;
+    }
+}

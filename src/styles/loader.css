@@ -1,0 +1,31 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+}
+
+.loader_img {
+    width: 30%;
+}
+
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(2);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  
+  .loader_img {
+    animation: scaleAnimation 5s none;
+  }

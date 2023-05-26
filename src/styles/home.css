@@ -1,0 +1,244 @@
+.home_section {
+    height: fit-content;
+    background-image: url('../../public/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_section,
+.home_sectionContainer,
+.home_infoSection {
+    width: 100vw;
+    height: 400px;
+    min-height: 400px;
+}
+
+.home_sectionContainer {
+    background: var(--D_darkBlueT);
+    flex-direction: column;
+}
+
+.home_image {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    background-color: rgba(250, 250, 250, 0.8);
+    display: flex;
+    justify-content: center;
+}
+
+.home_image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.home_title {
+    max-width: 600px;
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.home_infoSection {
+    width: 100vw;
+    height: fit-content;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.home_infoSection h4 {
+    text-align: center;
+    padding: 4rem 2rem 1rem 2rem;
+    max-width: 750px;
+}
+
+.card_Servicios,
+.card_Climatización,
+.card_Proyectos {
+    padding: 2rem 0;
+}
+
+.card_ServiciosContainer {
+    background: url('https://img.freepik.com/vector-gratis/ilustracion-vector-concepto-abstracto-mantenimiento-sitio-web-servicio-sitio-web-mantenimiento-seo-pagina-web-diseno-web-soporte-profesional-sitio-corporativo-analisis-seguridad-actualizacion-metafora-abstracta_335657-2295.jpg?w=740&t=st=1684760532~exp=1684761132~hmac=9ad555d78a09d091dbc5ca50e561c986edb705fd1c8020cddd5fbbdfa2104032');
+}
+
+.card_ClimatizaciónContainer {
+    background: url('https://img.freepik.com/vector-gratis/concepto-abstracto-servicios-aire-acondicionado-refrigeracion_335657-3181.jpg?w=2000');
+}
+
+.card_ProyectosContainer {
+    background: url('https://img.freepik.com/vector-gratis/reunion-corporativa-empleados-personajes-dibujos-animados-que-discuten-estrategia-comercial-planifican-acciones-adicionales-lluvia-ideas-comunicacion-formal-ilustracion-concepto-seminario_335657-2035.jpg?w=740&t=st=1685038418~exp=1685039018~hmac=3e4eeb0c1624b241b2721669a8dc6c531b4a8b260521406cda7f68f2a03b3f52');
+}
+
+.card_ProyectosContainer,
+.card_ClimatizaciónContainer,
+.card_ServiciosContainer {
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 2s;
+}
+.card_ServiciosContainer:hover,
+.card_ClimatizaciónContainer:hover,
+.card_ProyectosContainer:hover {
+    background: var(--D_darkBlue);
+}
+
+.card_container {
+    border: 2px solid var(--D_darkBlue) !important;
+    height: 300px !important;
+    justify-content: space-between !important;
+}
+
+.card_title,
+.card_text {
+    text-align: center;
+    color: white;
+}
+
+.card_padding {
+    padding-top: 2rem;
+}
+
+.card_body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_container {
+    transition: all 2s;
+}
+
+.card_container:hover {
+    transform: scale(1.06);
+}
+
+.card_infoContainer {
+    text-decoration: none !important;
+}
+
+.card_name {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+
+.card_textImg {
+    width: 30%;
+}
+
+.card_textImg img {
+    width: 100%;
+}
+
+.home_cardSection,
+.home_videoContainer,
+.home_contactBanner {
+    flex-direction: column;
+}
+
+.home_videoTitle {
+    width: 80%;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.home_videoTitle {
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+.home_videoTitle h3 {
+    max-width: 600px;
+    color: white;
+}
+
+.home_videoSection {
+    flex-direction: column;
+    background: url('https://img.freepik.com/foto-gratis/manos-recortadas-planos-arquitecto-proyecto-arquitectonico_1098-18818.jpg?size=626&ext=jpg&ga=GA1.2.1832098813.1668892518&semt=sph');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.home_videoContent {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    background: var(--D_darkBlueT);
+}
+
+.home_videoSection video {
+    max-width: 450px;
+    padding: 1rem 0 2rem 0;
+}
+
+.home_video {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.home_contactSection {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.home_contactButton {
+    width: 150px;
+    height: 50px;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background: var(--D_lightGreen);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 700px) {
+    .home_section,
+    .home_sectionContainer {
+        height: 500px;
+    }
+
+    .home_cardSection {
+        display: grid !important;
+        grid-template-columns: auto auto !important; 
+        gap: 4%;
+    }
+
+    .home_videoContainer {
+        flex-direction: row;
+    }
+
+    .home_videoSection video {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 980px) {
+
+    .home_section,
+    .home_sectionContainer {
+        height: 600px;
+    }
+
+    .home_cardSection {
+        display: flex !important;
+        flex-direction: row ;
+    }
+
+    .card_Servicios,
+    .card_Climatización,
+    .card_Proyectos {
+        margin: 1rem;
+    }   
+}
