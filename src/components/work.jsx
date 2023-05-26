@@ -9,34 +9,26 @@ const Work = () => {
 
     return (
         <section className="services_workSection d_center">
-            <div className="services_workContainer">
+            <h2>Trabajos Destacados</h2>
+            <div className="services_work_info">
+                <p>
+                Nuestro equipo de profesionales se enorgullece de presentar nuestro exitoso proyecto de limpieza de locales comerciales. Nos especializamos en brindar un servicio integral que abarca todos los aspectos de la higiene y mantenimiento, garantizando que su tienda brille en cada rincón.
+                </p>
+            </div>
+            <div className="services_workContainer w-100 d_center">
             <div className="services_workImages d_center">
-                    <h2>Trabajos Destacados</h2>
                 </div>
                 <div className="services_workImagesContainer d_center">
-                    <>
-                    {window.innerWidth >= '700' ? 
-                    <div className="services_workLarge">
-                        
-                    <figure className="d_center">
-                    <p>Antes</p>
-                        <img src={`${local[0]}`} alt="local trabajko de limpieza antes y despues" />
-                    </figure>
-                    <figure className="d_center">
-                    <img src={`${local[2]}`} alt="local trabajo de limpieza antes y despues" />
-                    </figure>
-                    </div>
-                    : 
+                    <div className="services_workLarge d_Center">
                     <figure className="d_center">
                         <img src={`${local[0]}`} alt="local trabajko de limpieza antes y despues" />
-                    <p>Antes</p>
+                        <p>Antes</p>
                     </figure>
-                    }
-                    </>
                     <figure className="d_center">
                         <img src={`${local[1]}`} alt="local trabajko de limpieza antes y despues" />
                     <p>Después</p>
                     </figure>
+                    </div>
                 </div>
             </div>
         </section>
