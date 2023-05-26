@@ -54,10 +54,10 @@ const Servicios = () => {
     <div className='pag_container services_sectionContainer d_center'>
         <div className='d_center services_sectionAll'>
         <ServicesBanner/>
-    <div className='services_mainContainer'>
-    {works}
-    </div>
-      <Work/>
+        <div className='services_mainContainer'>
+          {works}
+        </div>
+          <Work/>
         </div>
     </div >
   )

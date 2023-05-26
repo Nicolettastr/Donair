@@ -1,93 +1,15 @@
-.services_sectionContainer,
 .services_sectionAll {
     flex-direction: column;
 }
 
-.services_section {
-    background: url('https://img.freepik.com/vector-gratis/ilustracion-vector-concepto-abstracto-mantenimiento-sitio-web-servicio-sitio-web-mantenimiento-seo-pagina-web-diseno-web-soporte-profesional-sitio-corporativo-analisis-seguridad-actualizacion-metafora-abstracta_335657-2295.jpg?w=740&t=st=1684760532~exp=1684761132~hmac=9ad555d78a09d091dbc5ca50e561c986edb705fd1c8020cddd5fbbdfa2104032');
-}
-
-.climatizacion_section {
-    background: url('https://img.freepik.com/vector-gratis/servicio-electricista_335657-3186.jpg?w=740&t=st=1684760430~exp=1684761030~hmac=6fa7b534fab27a87a3b703fdb6be4106e33b8afd701930fcd9372f032aadbf0e');
-}
-
-.proyectos_section {
-    background: url('https://img.freepik.com/vector-gratis/pequenos-empresarios-generando-ideas-sosteniendo-engranajes-gran-bombilla-gestion-ideas-pensamiento-alternativo-ilustracion-concepto-eleccion-mejor-solucion_335657-2555.jpg?w=740&t=st=1684760617~exp=1684761217~hmac=eb1d2588184d9f22a4dba9d8543cfffd32a1628b9e6cf29ea53560869f9a4f58');
-}
-
-.services_section,
-.climatizacion_section,
-.proyectos_section {
-    width: 100%;
-    max-width: 350px;
-    height: 480px;
-    max-height: 480px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
 .services_pad {
-    margin: 2rem 0;
-}
-
-.services_container,
-.climatizacion_container,
-.proyectos_container {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--D_darkBlueT);
-    border-radius: 0.3rem;
-}
-
-.services_title,
-.climatizacion_title,
-.proyectos_title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    font-size: 2.2rem;
-    color: white;
-    border-bottom: 2px solid white;
-}
-
-.services_list {
-    width: 100%;
-    padding: 0 2rem;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.services_list p,
-.services_list li{
-    text-align: center;
-    color: white;
-    list-style:circle;
-    font-size: 1.2rem;
-    letter-spacing: 0.05rem;
-}
-
-.services_list li {
-    line-height: 2rem;
-}
-
-.project_p,
-.projectos_list {
-    padding: 1.5rem 0.5rem;
-}
-
-.service_list {
-    padding: 1.5rem 2rem;
-}
-
-.climatizacion_list {
     padding: 1rem;
+}
+
+.services_mainContainer {
+    background: var(--D_darkBlue);
+    padding: 2rem 1rem;
 }
 
 #servicios,
@@ -103,6 +25,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 4rem;
 }
 
 .services_bannerContainer {
@@ -139,7 +62,6 @@
     margin: 5% 0;
     padding: 8% 0;
     width: 100%;
-    background: #e0ebeb;
     flex-direction: column;
 }
 
