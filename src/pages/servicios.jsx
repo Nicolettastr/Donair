@@ -1,6 +1,9 @@
 import ServicesBanner from '../components/servicesBanner';
 import Work from '../components/work';
 import '../styles/services.css'
+import serviceIcon from '../../public/tecnico.png'
+import climatizacionIcon from '../../public/casa.png'
+import proyectosIcon from '../../public/proyecto.png'
 
 const Servicios = () => {
 
@@ -11,7 +14,8 @@ const Servicios = () => {
       class: 'services',
       services: [
         'Fontanería', 'Carpintería', 'Cristalería', 'Electricidad', 'Limpieza', 'Pintura', 'Albañilería'
-      ]
+      ],
+      icon: serviceIcon
     },
 
     {
@@ -19,7 +23,8 @@ const Servicios = () => {
       class: 'climatizacion',
       services: [
         'Venta de equipos', 'Montaje, instalación', 'Servicio técnico', 'Mantenimiento', 'Extracción de aire', 'Ventilación de aire', 'Instalación de salidas de humo', 'Instalación chimeneas', 'Mantenimiento de chimeneas', 'Unidades de tratamiento de aire', 'Sistemas de refrigeración'
-      ]
+      ],
+      icon: climatizacionIcon
     },
     {
       name: 'Proyectos',
@@ -27,7 +32,8 @@ const Servicios = () => {
       class: 'proyectos',
       services: [
         'Piscinas', 'Tiendas','Terrazas','Locales'
-      ]
+      ],
+      icon: proyectosIcon
     }
   ]
 
@@ -35,12 +41,16 @@ const Servicios = () => {
     return (
       <section key={index} className={`${item.class}_section services_pad`} id={item.class}>
       <div className={`${item.class}_container`}>
-        <h2 className={`${item.class}_title`}>{item.name}</h2>
+        
+        <h2 className={`${item.class}_title type_title`}>
+        <img className='service_icon' src={item.icon} alt={`${item.name} icon`} />
+        {item.name}
+        </h2>
         <div>
           <ul className={`services_list ${item.class}_list`}>
             <p>{item.text}</p>
             {item.services.map((item, index) => {
-              return <li key={index}>{item}</li>
+              return <li className='services_itemList' key={index}>{item}</li>
             })}
             {item.textEnd ? <p className='project_p'>{item.textEnd}</p> : ''}
           </ul>
