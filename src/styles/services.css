@@ -8,32 +8,62 @@
 }
 
 .services_mainContainer {
+    width: 100%;
     background: var(--D_darkBlue);
     padding: 2rem 1rem;
+    flex-direction: column;
 }
 
 .type_title {
+    width: 100%;
     color: white;
-    padding: 0 2rem;
+    padding: 0.2rem 2rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.services_list p,
-.services_list li {
+.services_info {
     color: white;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
 }
 
 .services_itemList {
-    width: 100px;
+    width: 150px;
+    height: 120px;
     background: #fafafa;
+    padding: 0.4rem 0.6rem;
+    list-style: none;
+    margin: 0.3rem;
+    border-radius: 0.3rem;
+    color: var(--D_darkBlue) !important;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.services_list {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.project_p {
+    color: white;
+    padding: 1rem 0.5rem;
+    text-align: start;
 }
 
 .services_section,
 .climatizacion_section,
 .proyectos_section {
     max-width: 350px;
-    height: 400px;
+    height: 600px;
     border: 2px solid #fafafa;
     margin: 2rem 0;
     padding: 1rem;
@@ -41,8 +71,11 @@
 }
 
 .service_icon {
-    width: 40px;
-    margin-right: 1rem;
+    width: 35px;
+}
+
+.service_iconTitle {
+    margin-right: 0.5rem;
 }
 
 #servicios,
@@ -102,7 +135,7 @@
     width: 100%;
     max-width: 400px;
     text-align: justify;
-    padding: 1rem;
+    padding: 1rem 2rem;
     font-size: 1.1rem;
 }
 
@@ -116,6 +149,10 @@
     text-align: center;
     color: var(--D_darkBlue);
     letter-spacing: 1px;
+}
+
+.services_workImagesContainer figure p {
+    color: var(--D_green);
 }
 
 .services_workContainer {
@@ -159,6 +196,7 @@
 
 .services_workLarge {
     width: 100%;
+    padding: 0.5rem;
 }
 
 @media (min-width: 500px) {
@@ -196,6 +234,25 @@
     .proyectos_section {
         margin: 1rem;
     }
+
+    .services_workSection  {
+        flex-direction: row;
+        align-items: self-start;
+    }
+
+    .services_workLarge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services_workImagesContainer,
+    .services_workImagesContainer div figure {
+        max-width: none;
+        max-height: 600px;
+    }
+
+    
 }
 
 @media (min-width: 1200px) {
@@ -210,6 +267,29 @@
         margin: 1rem;
         width: 375px;
         min-width: 375px;
+    }
+
+    .services_work_info {
+        max-width: 500px;
+        padding: 6rem 1rem 0 4rem;
+        position: relative;
+    }
+
+    .services_work_info h2 {
+        width: 800px;
+        position: absolute;
+        top: -5%;
+        font-size: 4rem;
+        border-bottom: 1px solid var(--D_green);
+    }
+    
+    .services_work_info p {
+        padding-top: 2rem;
+        padding-left: 3rem;
+    }
+
+    .services_figure {
+        max-width: 380px !important;
     }
 }
 
