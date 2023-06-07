@@ -1,32 +1,34 @@
 import ServicesBanner from '../components/servicesBanner';
 import Work from '../components/work';
 import '../styles/services.css'
-import serviceIcon from '../../public/tecnico.png'
-import climatizacionIcon from '../../public/casa.png'
-import proyectosIcon from '../../public/proyecto.png'
+import serviceIcon from '/tecnico.png'
+import climatizacionIcon from '/casa.png'
+import proyectosIcon from '/proyecto.png'
 
-import Fontanería from '../../public/servicesIcon/valvula.png'
-import Carpintería from '../../public/servicesIcon/carpinteria.png'
-import Cristalería from '../../public/servicesIcon/vaso.png'
-import Electricidad from '../../public/servicesIcon/enchufe.png'
-import Albañilería from '../../public/servicesIcon/albanil.png'
-import Limpieza from '../../public/servicesIcon/limpiar.png'
-import Pintura from '../../public/servicesIcon/pintura.png'
+import Fontanería from '/servicesIcon/valvula.png'
+import Carpintería from '/servicesIcon/carpinteria.png'
+import Cristalería from '/servicesIcon/vaso.png'
+import Electricidad from '/servicesIcon/enchufe.png'
+import Albañilería from '/servicesIcon/albanil.png'
+import Limpieza from '/servicesIcon/limpiar.png'
+import Pintura from '/servicesIcon/pintura.png'
 
-import aire from '../../public/climatizacionIcon/aire.png'
-import filtro from '../../public/climatizacionIcon/filtro.png'
-import humo from '../../public/climatizacionIcon/humo.png'
-import instalar from '../../public/climatizacionIcon/instalar.png'
-import mantenimiento from '../../public/climatizacionIcon/mantenimiento.png'
-import refrigerar from '../../public/climatizacionIcon/refrigerar.png'
-import ventilacion from '../../public/climatizacionIcon/ventilacion.png'
+import aire from '/climatizacionIcon/aire.png'
+import filtro from '/climatizacionIcon/filtro.png'
+import humo from '/climatizacionIcon/humo.png'
+import instalar from '/climatizacionIcon/instalar.png'
+import mantenimiento from '/climatizacionIcon/mantenimiento.png'
+import refrigerar from '/climatizacionIcon/refrigerar.png'
+import ventilacion from '/climatizacionIcon/ventilacion.png'
 climatizacionIcon
 
-import tienda from '../../public/proyectosIcon/tienda.png'
-import local from '../../public/proyectosIcon/local.png'
-import piscina from '../../public/proyectosIcon/piscina.png'
-import terraza from '../../public/proyectosIcon/terraza.png'
-import bombilla from '../../public/proyectosIcon/bombilla.png'
+import tienda from '/proyectosIcon/tienda.png'
+import local from '/proyectosIcon/local.png'
+import piscina from '/proyectosIcon/piscina.png'
+import terraza from '/proyectosIcon/terraza.png'
+import bombilla from '/proyectosIcon/bombilla.png'
+
+import { Fade } from "react-awesome-reveal";
 
 
 const Servicios = () => {
@@ -164,7 +166,9 @@ const Servicios = () => {
         <div className='d_center services_sectionAll'>
         <ServicesBanner/>
         <div className='services_mainContainer d_center'>
+        <Fade duration='2500'>
           {works}
+        </Fade>
         </div>
           <Work/>
         </div>

@@ -13,6 +13,7 @@
     --D_blue:#106fb7;
     --D_lightGreen: #aac80d;
     --D_green: #34a33d;
+    --D_lightBlue: #d5def5;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
 
 .pag_container {
     animation: appearAnimation 2s none;
+    position: relative;
 }
 
 @keyframes fadeIn {
@@ -59,6 +61,32 @@ body {
     opacity: 1 !important;
   }
   
+  .whatsapp_container {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .icon_whatsapp {
+    width: 60px;
+    height: 60px;
+    padding: 0.3rem;
+    z-index: 1000;
+    animation: scale 3s infinite;
+  }
+
+  @keyframes scale {
+    0% {
+      scale: 0.8;
+    }
+    50% {
+      scale: 1;
+    }
+
+    100% {
+      scale: 0.8;
+    }
+  }
   
   
   

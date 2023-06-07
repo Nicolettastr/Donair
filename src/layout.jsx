@@ -10,6 +10,7 @@ import injectContext from "./store/appContext";
 import Location from './pages/location'
 import Contact from './pages/contact'
 import Thanks from './pages/thanks';
+import Whatsapp from './components/whatsapp';
 
 const Layout = () => {
 
@@ -30,6 +31,7 @@ const Layout = () => {
         {store.isLoading ? <Loader/> :
         <div className='pag_container'>
             <Navbar_component/>
+            <Whatsapp/>
             <Routes>
                 <Route element={<Home />} path="/" />
                 <Route element={<Servicios/>} path="/services"/>

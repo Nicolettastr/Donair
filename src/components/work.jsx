@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Context } from "../store/appContext";
+import { Fade } from "react-awesome-reveal";
 
 const Work = () => {
 
@@ -9,6 +10,7 @@ const Work = () => {
 
     return (
         <section className="services_workSection d_center">
+            <Fade duration='3000'>
             <div className="services_work_info">
                 <h2>Trabajos Destacados</h2>
                 <p>
@@ -31,6 +33,7 @@ const Work = () => {
                     </div>
                 </div>
             </div>
+            </Fade>
         </section>
     )
 };

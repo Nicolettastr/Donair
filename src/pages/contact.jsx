@@ -1,43 +1,74 @@
+import { useContext } from 'react'
+import '../styles/contact.css'
+import {Context} from '../store/appContext'
+
 const Contact = () => {
+
+  const {store} = useContext(Context)
+
+  const contactInputs = ['nombre', 'email', 'asunto', 'móvil']
+
+  const contact = contactInputs.map((item, index) => {
+    return (
+      <div className='contact_inputContainer' key={index}>
+        <label htmlFor={item}>{item.replace(/^\w/, (c) => c.toUpperCase())}</label>
+            <input
+              className="contact-input"
+              type={item.includes('email') ? 'email' : 'text'}
+              name={item}
+              placeholder={item.replace(/^\w/, (c) => c.toUpperCase())}
+              required
+            />
+      </div>
+    )
+  })
+
   return (
-    <form
-        action="https://formsubmit.co/nicolettastruggia@hotmail.com"
+    <div className='contact_Section'>
+      <form
+        action="https://formsubmit.co/administracion2021@donair.es"
         method="POST"
+        className="contact_form"
       >
-        <h2 className="w-100 txt-center mg-tb salmon">Contact Us</h2>
-        <div className="contact_container d-flex justify-content-center">
-          <div className="input_container bg-lighter-blue one_pad">
-            <input
-              className="contact-input"
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-            />
-            <input
-              className="contact-input"
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              className="contact-text"
-              type="text"
-              name="name"
-              placeholder="Message"
-              required
-            ></textarea>
-            <input type="hidden" name="_next" value="https://localhost:5173/thanks"></input>
-            <button
+        <div className='contact_titular'>
+            <div className='contact_bannerContainer'>
+              <h2 className='contact_banner'>¿Buscas realizar un proyecto o contratar un servicio?</h2>
+              <h2 className="contact_banner">
+              ¡Contáctanos y te ayudaremos!
+              </h2>
+            </div>
+        </div>
+        <figure className='contact_logo'>
+            <img src={store.logo} alt="logo donair" />
+            <h2>Contáctanos</h2>
+        </figure>
+        <div className="contact_container">
+            <div className="contact_inputs">
+              {contact}
+              <div className='contact_inputContainer'>
+                <label htmlFor="text">Mensaje</label>
+                <textarea
+                  className="contact-text"
+                  type="text"
+                  name="text"
+                  placeholder="Mensaje"
+                  required
+                ></textarea>
+              </div>
+            <input type="hidden" name="_next" value="https://donair.es/thanks"></input>
+            </div>
+        </div>
+        
+        <div className='contact_btnContainer'>
+        <button
               type="submit"
-              className="btn red_Btn general_button white_letter mg-tb"
+              className="contact_btn"
             >
               Send
-            </button>
-          </div>
+        </button>
         </div>
       </form>
+    </div>
   )
 }
 

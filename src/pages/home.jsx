@@ -2,7 +2,7 @@ import '../styles/home.css'
 import logo from '../../public/logo_T.png'
 import Card_component from '../components/card';
 import { Link } from 'react-router-dom';
-
+import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
 
@@ -16,6 +16,7 @@ const Home = () => {
                 <h1 className='home_title'>Servicios, Climatización & Proyectos</h1>
             </div>
         </section>
+        <Fade duration='2000'>
         <section className='home_infoSection d_center'>
             <h4>
                 Somos Donair, tu aliado en servicios, climatización y   Proyectos. Confía en Donair y disfruta de resultados impecables.
@@ -50,6 +51,7 @@ const Home = () => {
                 </Link>
             </div>
         </section>
+        </Fade>
         </div>
     )
 };

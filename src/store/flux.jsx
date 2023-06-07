@@ -1,7 +1,7 @@
-import logo from '../../public/logo.png'
-import antes from '../../public/antes.jpeg'
-import despues from '../../public/despues.jpeg'
-import medium from '../../public/medium.jpg'
+import logo from '/logo.png'
+import antes from '/antes.jpeg'
+import despues from '/despues.jpeg'
+import medium from '/medium.jpg'
 
   const getState = ({ setStore }) => {
   

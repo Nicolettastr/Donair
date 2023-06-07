@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import servicio from '../../public/tecnico.png'
 import clima from '../../public/casa.png'
 import proyectos from '../../public/proyecto.png'
+import { Fade } from 'react-awesome-reveal';
 
 const Card_component = () => {
 
@@ -29,6 +30,7 @@ const Card_component = () => {
 
     return (
         <>
+        <Fade duration='3000'>
         {info.map((item, index) => {
             return (
         <Link to={`/services#${item.id}`} className='card_infoContainer' key={index}>
@@ -47,10 +49,11 @@ const Card_component = () => {
             <h2 className='card_name'>{item.name}</h2>
         </div>
         </Link>
-    )
-})
-}
-</>
+            )
+        })
+        }
+        </Fade>
+        </>
     )
 }
 
