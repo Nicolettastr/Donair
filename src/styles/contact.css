@@ -92,7 +92,7 @@ label {
     align-items: center;
     padding: 0.5rem;
     border-radius: 0.3rem;
-    margin: 0.5rem 0;
+    margin: 0.5rem;
     outline: none;
 }
 
@@ -126,5 +126,6 @@ label {
         width: 55%;
         display: grid;
         grid-template-columns: auto auto;
+        gap: 15px;
     }
 }
