@@ -88,7 +88,7 @@ const Contact = () => {
               type="submit"
               className="contact_btn"
             >
-              Send
+              Enviar
         </button>
         </div>
       </form>

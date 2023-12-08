@@ -20,7 +20,6 @@ import instalar from '/climatizacionIcon/instalar.png'
 import mantenimiento from '/climatizacionIcon/mantenimiento.png'
 import refrigerar from '/climatizacionIcon/refrigerar.png'
 import ventilacion from '/climatizacionIcon/ventilacion.png'
-climatizacionIcon
 
 import tienda from '/proyectosIcon/tienda.png'
 import local from '/proyectosIcon/local.png'

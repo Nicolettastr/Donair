@@ -2,17 +2,24 @@ import '../styles/location.css'
 import { Fade } from 'react-awesome-reveal';
 
 const Location = () => {
+
+  const message = {
+    one: '¿Listo para llevar tu idea a otro nivel o contratar un servicio?',
+    two: 'Nos ubicamos aquí, listos para ayudarte en lo que necesites',
+    three: 'Calle Santa Susana, 30, Local 3, 28033'
+  }
+
   return (
     <Fade>
     <section className='pag_container location_container'>
       <div>
         <div className='location_banner'>
-        <h2>¿Listo para llevar tu idea a otro nivel o contratar un servicio?</h2>
-        <h2>Nos ubicamos aquí, listos para ayudarte en lo que necesites</h2>
+        <h2>{message.one}</h2>
+        <h2>{message.two}</h2>
         </div>
         <div className='location_title'>
         <h2>Ubicación</h2>
-        <p>Calle Santa Susana, 30, Local 3, 28033</p>
+        <p>{message.three}</p>
         </div>
       </div>
       <div className='location_mapSection'>

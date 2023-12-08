@@ -9,7 +9,6 @@ import {Context} from './store/appContext';
 import injectContext from "./store/appContext";
 import Location from './pages/location'
 import Contact from './pages/contact'
-import Thanks from './pages/thanks';
 import Whatsapp from './components/whatsapp';
 
 const Layout = () => {
@@ -37,7 +36,6 @@ const Layout = () => {
                 <Route element={<Servicios/>} path="/services"/>
                 <Route element={<Location/>} path="/location"/>
                 <Route element={<Contact/>} path="/contact"/>
-                <Route element={<Thanks/>} path="/thanks"/>
                 <Route element={<h1>Not found!</h1>} />
             </Routes>
             <Footer/>
